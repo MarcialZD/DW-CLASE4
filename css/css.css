@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.header {
+    background-color: #cecccc;
+    color: #000000;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.x-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left img {
+    margin: 0;
+    max-width: 60px;
+    padding: 0;
+    animation: rotateLogo 1s linear infinite;
+}
+.header_left img:hover{
+    border: solid black;
+    border-radius: 15%;
+}
+@keyframes rotateLogo {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.header_right_content {
+    display: flex;
+    align-items: center;
+}
+
+.header_right_content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header_right_content ul li:hover {
+    color: rgb(255, 0, 0);
+}
+
+.header_right_content ul li {
+    margin-right: 20px;
+}
+
+.header_right_content ul li:last-child {
+    margin-right: 0;
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    background-color: #0e0e0e;
+    margin: 0 20px;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+}
+
+.social_icons i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_left img {
+    margin-right: 10px;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    height: calc(100vh - 75x); 
+}
+
+.hero_content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_text {
+    text-align: center;
+    width: 50%;
+    animation: moveText 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.hero_text h2 {
+    margin: 0;
+}
+
+.hero_image {
+    flex: 1;
+    height: 100%;
+}
+
+
+#seccion-cajitas {
+    text-align: center;
+    margin: 5%;
+}
+
+.cajita {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 20px 0px 10px rgba(20, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.cajita:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.cajita img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.cajita .subtitulo,
+.cajita .descripcion {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; 
+    padding: 10px; 
+    text-align: justify;
+}
