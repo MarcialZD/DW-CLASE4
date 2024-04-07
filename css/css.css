@@ -10,12 +10,21 @@ body {
 }
 
 .header {
-    background-color: #cecccc;
+    background-color: rgba(2, 2, 2, 0.5);
+
+
     color: #000000;
     padding: 5px 0;
     position: relative;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 3;
 }
+
+.header:hover {}
 
 .x-container {
     max-width: 1200px;
@@ -29,16 +38,20 @@ body {
     margin: 0;
     max-width: 60px;
     padding: 0;
-    animation: rotateLogo 1s linear infinite;
-}
-.header_left img:hover{
     border: solid black;
-    border-radius: 15%;
+    border-radius: 5%;
+
+    animation: rotateLogo 2s linear infinite;
 }
+
+
 @keyframes rotateLogo {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(10deg);
     }
@@ -55,10 +68,14 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
+    color: aqua;
+
 }
 
 .header_right_content ul li:hover {
-    color: rgb(255, 0, 0);
+    border:solid  rgb(6, 6, 6);
+    border-radius: 10%;
+    padding: 1%;
 }
 
 .header_right_content ul li {
@@ -107,7 +124,7 @@ a {
     z-index: 0;
     overflow: hidden;
     display: flex;
-    height: calc(100vh - 75x); 
+    height: calc(100vh - 75x);
 }
 
 .hero_content {
@@ -127,6 +144,7 @@ a {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(20px);
     }
@@ -147,25 +165,23 @@ a {
     margin: 5%;
     width: 92%;
     display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap; 
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cajita {
-    flex-basis: 25%; 
+    flex-basis: 25%;
     height: auto;
     text-align: center;
     background-color: #f3f3f3;
     border-radius: 10px;
-    box-shadow: 15px 30px 20px rgba(2, 2, 2, 0.5);
+    box-shadow: 15px 20px 20px rgba(2, 2, 2, 0.5);
     padding: auto;
     overflow: hidden;
-    margin: auto 1%; 
+    margin: auto 1%;
 }
 
-.cajita:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
-}
+
 
 .cajita img {
     width: 100%;
@@ -181,8 +197,16 @@ a {
     color: #ffffff;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: normal; 
-    padding: 10px; 
+    white-space: normal;
+    padding: 10px;
     text-align: justify;
-    overflow: auto; 
+    overflow: auto;
+}
+footer{
+    text-align: center;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    height: 60px;
+    padding: 20 px auto;
 }
